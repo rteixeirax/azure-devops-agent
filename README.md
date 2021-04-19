@@ -1,5 +1,10 @@
 # Azure devops agent
 
+[![Licence](https://img.shields.io/github/license/ricardotx/azure-devops-agent?label=Licence&logo=github)](https://github.com/ricardotx/azure-devops-agent/blob/main/LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/ricardotx/azure-devops-agent?logo=github&label=Release)](https://github.com/ricardotx/azure-devops-agent/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ricardotx/azure-devops-agent?logo=docker&label=Docker%20pulls)](https://hub.docker.com/r/ricardotx/azure-devops-agent)
+[![Deploy](https://github.com/ricardotx/azure-devops-agent/actions/workflows/deploy.yml/badge.svg)](https://github.com/ricardotx/azure-devops-agent/actions/workflows/deploy.yml)
+
 👉 [Run a self-hosted agent in Docker](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops#linux)
 
 ### Docker-compose

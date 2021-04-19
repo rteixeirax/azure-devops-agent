@@ -5,12 +5,6 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
 
-RUN apt-get update && apt-get install -y --no-install-recommends wget
-
-RUN sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-
-RUN sudo dpkg -i packages-microsoft-prod.deb
-
 RUN apt-get update \
 && apt-get install -y --no-install-recommends \
         ca-certificates \
@@ -23,6 +17,13 @@ RUN apt-get update \
         libunwind8 \
         netcat \
         libssl1.0 \
+        wget
+
+RUN sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+RUN sudo dpkg -i packages-microsoft-prod.deb
+
+RUN apt-get update \
+&& apt-get install -y --no-install-recommends \
         apt-transport-https \
         dotnet-sdk-5.0 \
         aspnetcore-runtime-5.0

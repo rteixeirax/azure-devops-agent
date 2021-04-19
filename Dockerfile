@@ -16,9 +16,9 @@ RUN apt-get update \
         libicu60 \
         libunwind8 \
         netcat \
-        libssl1.0
-
-
+        libssl1.0 \
+        zip \
+        unzip
 
 RUN apt-get update \
 && apt-get install -y --no-install-recommends \

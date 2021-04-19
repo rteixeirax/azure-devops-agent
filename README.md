@@ -2,6 +2,37 @@
 
 👉 [Run a self-hosted agent in Docker](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops#linux)
 
+### Docker-compose
+
+````yaml
+version: "3"
+services:
+  azure-devops-agent:
+    container_name: azure-devops-agent
+    image: ricardotx/azure-devops-agent
+    restart: unless-stopped
+    environment:
+      - AZP_URL=https://your.server.instance
+      - AZP_TOKEN=your_access_token
+      - AZP_AGENT_NAME=your_agent_name
+      - AZP_POOL=Default
+      - AZP_WORK=_work
+````
+
+### Docker cli
+
+````
+docker run -d \
+  --name=azure-devops-agent \
+  -e AZP_URL=https://your.server.instance \
+  -e AZP_TOKEN=your_access_token \
+  -e AZP_AGENT_NAME=your_agent_name \
+  -e AZP_POOL=Default \
+  -e AZP_WORK=_work \
+  --restart unless-stopped \
+  ricardotx/azure-devops-agent
+````
+
 ## Environment  variables
 
 | Variable | Description |

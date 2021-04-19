@@ -20,7 +20,10 @@ RUN apt-get update \
 
 RUN apt-get update \
 && apt-get install -y --no-install-recommends \
-        apt-transport-https \
+        apt-transport-https
+
+RUN apt-get update \
+&& apt-get install -y --no-install-recommends \
         dotnet-sdk-5.0 \
         aspnetcore-runtime-5.0
 

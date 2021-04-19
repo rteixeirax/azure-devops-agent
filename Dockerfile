@@ -18,6 +18,15 @@ RUN apt-get update \
         netcat \
         libssl1.0
 
+
+
+RUN apt-get update \
+&& apt-get install -y --no-install-recommends \
+        wget
+
+RUN wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+&& sudo dpkg -i packages-microsoft-prod.deb
+
 RUN apt-get update \
 && apt-get install -y --no-install-recommends \
         apt-transport-https

@@ -20,6 +20,7 @@ RUN apt-get update \
         zip \
         unzip \
         wget \
+        sudo \
         apt-transport-https
 
 RUN wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \

@@ -25,10 +25,14 @@ RUN apt-get update \
 RUN wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
 && dpkg -i packages-microsoft-prod.deb
 
+RUN curl -sL [https://deb.nodesource.com/setup_14.x](https://deb.nodesource.com/setup_14.x) | -E bash -
+
 RUN apt-get update \
 && apt-get install -y --no-install-recommends \
         dotnet-sdk-5.0 \
-        aspnetcore-runtime-5.0
+        aspnetcore-runtime-5.0 \
+        nodejs
+
 
 WORKDIR /azp
 

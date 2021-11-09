@@ -30,8 +30,8 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
 RUN apt-get update \
 && apt-get install -y --no-install-recommends \
-        dotnet-sdk-5.0 \
-        aspnetcore-runtime-5.0 \
+        dotnet-sdk-6.0 \
+        aspnetcore-runtime-6.0 \
         nodejs
 
 

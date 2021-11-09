@@ -5,7 +5,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/ricardotx/azure-devops-agent?logo=docker&label=Docker%20pulls)](https://hub.docker.com/r/ricardotx/azure-devops-agent)
 [![Deploy](https://github.com/ricardotx/azure-devops-agent/actions/workflows/deploy.yml/badge.svg)](https://github.com/ricardotx/azure-devops-agent/actions/workflows/deploy.yml)
 
-*Self-hosted agent for azure pipelines that runs `dotnet-sdk-5.0`, `aspnetcore-runtime-5.0` and `nodejs 14.x`.*
+*Self-hosted agent for azure pipelines that runs `dotnet-sdk-6.0`, `aspnetcore-runtime-6.0` and `nodejs 14.x`.*
 
 ### Microsoft documentation
 

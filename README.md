@@ -1,9 +1,9 @@
 # Azure devops agent
 
-[![Licence](https://img.shields.io/github/license/rteixeirax/azure-devops-agent?label=Licence&logo=github)](https://github.com/ricardotx/azure-devops-agent/blob/main/LICENSE)
-[![GitHub Release](https://img.shields.io/github/v/release/ricardotx/azure-devops-agent?logo=github&label=Release)](https://github.com/rteixeirax/azure-devops-agent/releases)
-[![Docker Pulls](https://img.shields.io/docker/pulls/rteixeirax/azure-devops-agent?logo=docker&label=Docker%20pulls)](https://hub.docker.com/r/ricardotx/azure-devops-agent)
-[![Deploy](https://github.com/rteixeirax/azure-devops-agent/actions/workflows/deploy.yml/badge.svg)](https://github.com/ricardotx/azure-devops-agent/actions/workflows/deploy.yml)
+[![Licence](https://img.shields.io/github/license/rteixeirax/azure-devops-agent?label=Licence&logo=github)](https://github.com/rteixeirax/azure-devops-agent/blob/main/LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/rteixeirax/azure-devops-agent?logo=github&label=Release)](https://github.com/rteixeirax/azure-devops-agent/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/rteixeirax/azure-devops-agent?logo=docker&label=Docker%20pulls)](https://hub.docker.com/r/rteixeirax/azure-devops-agent)
+[![Deploy](https://github.com/rteixeirax/azure-devops-agent/actions/workflows/deploy.yml/badge.svg)](https://github.com/rteixeirax/azure-devops-agent/actions/workflows/deploy.yml)
 
 *Self-hosted agent for azure pipelines that runs `dotnet-sdk-6.0`, `aspnetcore-runtime-6.0` and `nodejs 16.x`.*
 
@@ -39,7 +39,7 @@ docker run -d \
   -e AZP_POOL=Default \
   -e AZP_WORK=_work \
   --restart unless-stopped \
-  ricardotx/azure-devops-agent
+  rteixeirax/azure-devops-agent
 ````
 
 ## Environment  variables
